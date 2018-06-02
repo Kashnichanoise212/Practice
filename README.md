@@ -1,6 +1,6 @@
 # Practice
-for Plotly
-create an Scatter with the data about age and height of the players of 5 nations who will participate in WC2018 from AFC
+for Plotly　　
+Create an Scatter with the data about age and height of the players of 5 nations who will participate in WC2018 from AFC
 
 WC2018_Scatter_Asia.py: Codes
 afc_Wc2018.csv: list
