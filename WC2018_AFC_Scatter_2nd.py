@@ -22,9 +22,9 @@ naming=("AUS", "IRN", "JPN", "KOR",  "KSA")
 
 #Graph - Average Data  
 trace_0= graph.Scatter(x = df1["age"], y = df1["height"], mode = 'markers', name="Average", text= naming, marker=dict(size =30, color=coloring), opacity=0.9)
-trace_1= graph.Scatter(x = df1["weighted age by min"], y = df1["weighted height by min"], mode = 'markers', name="Average_weighted by playing minutes", text= naming, marker=dict(size =30, color=coloring), opacity=0.7)
-trace_2= graph.Scatter(x = df1["Ave. A w/o 0min"], y = df1["Ave. H w/o 0min"], mode = 'markers', name="Average_without no-playing(0min) players", text= naming, marker=dict(size =30, color=coloring), opacity=0.6)
-trace_3= graph.Scatter(x = df1["Ave. A w/o GK"], y = df1["Ave. H w/o GK"], mode = 'markers', name="Average_without Goal keepers", text= naming, marker=dict(size =30, color=coloring), opacity=0.8)
+trace_1= graph.Scatter(x = df1["Ave. A w/o GK"], y = df1["Ave. H w/o GK"], mode = 'markers', name="Average_without Goal keepers", text= naming, marker=dict(size =30, color=coloring), opacity=0.8)
+trace_2= graph.Scatter(x = df1["weighted age by min"], y = df1["weighted height by min"], mode = 'markers', name="Average_weighted by playing minutes", text= naming, marker=dict(size =30, color=coloring), opacity=0.7)
+trace_3= graph.Scatter(x = df1["Ave. A w/o 0min"], y = df1["Ave. H w/o 0min"], mode = 'markers', name="Average_without no-playing(0min) players", text= naming, marker=dict(size =30, color=coloring), opacity=0.6)
 trace_4= graph.Scatter(x = df1["Ave. A w/o GK&0min"], y = df1["Ave. H w/o GK&0min"], mode = 'markers', name="Average_without Goal keepers & no-playing(0min) players", text= naming, marker=dict(size =30, color=coloring), opacity=0.5)
 
 layout = graph.Layout( width=1200, height=450*1.5, xaxis = dict(title="age", range = [25,30], dtick=1), yaxis = dict(title="height", range = [170,190], dtick=5))
