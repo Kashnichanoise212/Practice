@@ -74,7 +74,7 @@ layout2 = graph.Layout( width=1200, height=450*1.5, xaxis = dict(title="age", ra
 
 fig2 = dict(data = [trace_aus, trace_irn, trace_jpn, trace_kor, trace_ksa], layout = layout2)
 
-plotly.offline.plot(fig2)
+plotly.offline.plot(fig2, filename="temp-plot2.html")
 
 
 
